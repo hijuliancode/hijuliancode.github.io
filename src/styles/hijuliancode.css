@@ -2,6 +2,7 @@
   /* COLORS */
   --color-brand-00: #121A26;
   --color-brand-01: #1C2834;
+  --color-brand-01-rgb: rgb(28, 40, 52);
   --color-brand-02: #1967D2;
   --color-brand-03: #40C4FF;
 
@@ -13,6 +14,8 @@
 
   /* SIZES */
   --base-size: 4px;
+  --height-header: 50px;
+  --height-alert: 50px;
 
   /* FONTS */
   --ff-primary: 'Open Sans', sans-serif;
@@ -23,8 +26,9 @@
 
   /* Root Styles */
   color: var(--color-brand-01);
-}
 
+}
+* { box-sizing: border-box; max-width: 100vw;}
 html, body {
   margin: 0;
   min-height: 100vh;
@@ -39,7 +43,7 @@ body {
 a { text-decoration: none; }
 a:hover { text-decoration: underline; }
 
-/*
+/**
   * Shared Styles
 */
 .Alert,
@@ -51,26 +55,40 @@ a:hover { text-decoration: underline; }
   align-items: center;
 }
 
-/*
+/**
   * Alerts
 */
 .Alert {
+  align-items: flex-start;
   background-color: var(--color-brand-00);
   color: var(--color-light);
-  font-size: 1.8rem;
+  flex-direction: column;
+  font-size: 1.4rem;
   font-weight: var(--ff-primary-300);
   justify-content: center;
-  min-height: 50px;
+  padding: 0.7rem 1rem;
 }
 .Alert span {
-  display: inline-block;
-  margin: 0 0.4rem;
+  display: none;
 }
 .Alert strong {
   font-weight: var(--ff-primary-300);
 }
+@media (min-width: 550px) {
+  .Alert {
+    align-items: center;
+    flex-direction: initial;
+    font-size: 1.8rem;
+    height: var(--height-alert);
+    padding: 0;
+  }
+  .Alert span {
+    display: inline-block;
+    margin: 0 0.4rem;
+  }
+}
 
-/*
+/**
   * Icons
 */
 .Icon {
@@ -78,7 +96,7 @@ a:hover { text-decoration: underline; }
   height: 3.2rem;
 }
 
-/*
+/**
   * Header
 */
 .Header {
@@ -86,7 +104,7 @@ a:hover { text-decoration: underline; }
   color: var(--color-light);
   display: flex;
   font-size: 1.8rem;
-  height: 50px;
+  height: var(--height-header);
   justify-content: space-between;
   padding-left: calc(var(--base-size) * 6);
 }
@@ -104,6 +122,12 @@ a:hover { text-decoration: underline; }
 }
 .Header__nav {
   font-size: 1.6rem;
+  display: none;
+}
+@media (min-width: 380px) {
+  .Header__nav {
+    display: flex;
+  }
 }
 .Header__nav a {
   border-radius: calc(var(--base-size));
@@ -125,26 +149,130 @@ a:hover { text-decoration: underline; }
   .Header__nav a span { display: inline }
 }
 
-/*
+/**
+  * Hero
+*/
+.Hero {
+  background-image: url(../images/design/bg/oskar-yildiz-gy08FXeM2L4-unsplash.jpg);
+  background-size: cover;
+  color: var(--color-white);
+  display: flex;
+  min-height: calc(100vh - 100px); /** 50px header + 50px alert */
+  position: relative;
+  padding-top: 2.4rem;
+}
+@media (min-width: 550px) {
+  .Hero {
+    padding-top: 0;
+  }
+}
+.Hero::before {
+  background-color: var(--color-brand-01);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0.85;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.Hero__content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 10;
+}
+@media (min-width: 550px) {
+  .Hero__content {
+    justify-content: center;
+  }
+}
+.Hero h1,
+.Hero strong,
+.Hero h2 {
+  font-weight: var(--ff-primary-300);
+  margin: 0;
+  /* width: 100%; */
+}
+.Hero h1 {
+  font-size: 2.2rem;
+}
+@media (min-width: 550px) {
+  .Hero h1 {
+    font-size: 6rem;
+    margin-top: auto;
+  }
+}
+.Hero strong {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 1.8rem;
+}
+@media (min-width: 550px) {
+  .Hero strong {
+    font-size: 1.8rem;
+    margin-bottom: 2.6rem;
+  }
+}
+.Hero h2 {
+  font-size: 1.6rem;
+}
+@media (min-width: 550px) {
+  .Hero h2 {
+    font-size: 5.2rem;
+  }
+}
+.Hero__footer {
+  border-top: 1px solid var(--color-white);
+  font-size: 1.4rem;
+  font-weight: var(--ff-primary-300);
+  list-style: none;
+  margin: auto 0 0;
+  padding: 1rem 0.5rem;
+  text-transform: uppercase;
+  width: 100%;
+}
+@media (min-width: 550px) {
+  .Hero__footer {
+    align-items: center;
+    display: flex;
+    font-size: 1.6rem;
+    justify-content: center;
+    padding: 2.2rem;
+  }
+}
+.Hero__footer li {
+  display: inline-block;
+  margin: 0;
+}
+.Hero__footer li a {
+  border-radius: 0.4rem;
+  color: var(--color-light);
+  padding: .4rem .6rem;
+}
+.Hero__footer li a:hover {
+  background-color: var(--color-brand-01);
+  padding: .4rem .6rem;
+}
+
+/**
   * Sections
 */
 
-/*
-  * Hero
-*/
-
-/*
+/**
   * Projects
 */
 
-/*
+/**
   * Skills
 */
 
-/*
+/**
   * Contact
 */
 
-/*
+/**
   * Footer
 */

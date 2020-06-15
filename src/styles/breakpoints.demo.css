@@ -1,5 +1,8 @@
 /* Mobile first queries */
 
+/* Extra small */
+@media (min-width: 380px) {}
+
 /* Larger than mobile */
 @media (min-width: 400px) {}
 
