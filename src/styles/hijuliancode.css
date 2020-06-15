@@ -1,0 +1,40 @@
+:root {
+  /* COLORS */
+  --color-brand-00: #121A26;
+  --color-brand-01: #1C2834;
+  --color-brand-02: #1967D2;
+  --color-brand-03: #40C4FF;
+
+  --color-gighlight: #00FF0C;
+  --color-light: #F0EDED;
+
+  --color-white: #F5F5F5;
+  --color-black: #040808;
+
+  /* SIZES */
+  --base-size: 4;
+
+  /* FONTS */
+  --ff-primary: 'Open Sans', sans-serif;
+  --ff-primary-300: 300;
+  --ff-primary-400: 400;
+  --ff-primary-600: 600;
+  --ff-primary-700: 700;
+
+  /* Root Styles */
+  color: var(--color-black);
+}
+
+html, body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+body {
+  background-color: var(--color-light);
+  font-family: var(--ff-primary);
+  font-weight: var(--ff-primary-400);
+}
+
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
