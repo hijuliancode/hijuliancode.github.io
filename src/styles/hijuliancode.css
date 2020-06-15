@@ -39,18 +39,10 @@ body {
 a { text-decoration: none; }
 a:hover { text-decoration: underline; }
 
-/**
-  * * Alerts
+/*
+  * Shared Styles
 */
-
-/**
-  * * Icons
-*/
-.Icon {
-  display: inline-block;
-  height: 3.2rem;
-}
-
+.Alert,
 .Header a,
 .Header__brand,
 .Header__brand figure,
@@ -59,8 +51,35 @@ a:hover { text-decoration: underline; }
   align-items: center;
 }
 
-/**
-  * * Header
+/*
+  * Alerts
+*/
+.Alert {
+  background-color: var(--color-brand-00);
+  color: var(--color-light);
+  font-size: 1.8rem;
+  font-weight: var(--ff-primary-300);
+  justify-content: center;
+  min-height: 50px;
+}
+.Alert span {
+  display: inline-block;
+  margin: 0 0.4rem;
+}
+.Alert strong {
+  font-weight: var(--ff-primary-300);
+}
+
+/*
+  * Icons
+*/
+.Icon {
+  display: inline-block;
+  height: 3.2rem;
+}
+
+/*
+  * Header
 */
 .Header {
   background-color: var(--color-brand-01);
@@ -87,7 +106,7 @@ a:hover { text-decoration: underline; }
   font-size: 1.6rem;
 }
 .Header__nav a {
-  border-radius: 4px;
+  border-radius: calc(var(--base-size));
   font-weight: var(--ff-primary-300);
   padding: 2px 8px;
   transition: background 0.2s ease-in-out;
@@ -106,26 +125,26 @@ a:hover { text-decoration: underline; }
   .Header__nav a span { display: inline }
 }
 
-/**
-  * * Sections
+/*
+  * Sections
 */
 
-/**
-  * * Hero
+/*
+  * Hero
 */
 
-/**
-  * * Projects
+/*
+  * Projects
 */
 
-/**
-  * * Skills
+/*
+  * Skills
 */
 
-/**
-  * * Contact
+/*
+  * Contact
 */
 
-/**
-  * * Footer
+/*
+  * Footer
 */
