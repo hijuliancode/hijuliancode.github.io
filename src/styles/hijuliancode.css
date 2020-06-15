@@ -260,6 +260,24 @@ a:hover { text-decoration: underline; }
 /**
   * Sections
 */
+.section {
+  padding-top: 3.2rem;
+}
+.section__title {
+  font-weight: var(--ff-primary-400);
+}
+@media (min-width: 550px) {
+  .section {
+    padding-top: 5.6rem;
+  }
+  .section__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .section__title {
+    font-size: 4.8rem;
+  }
+}
 
 /**
   * Projects
