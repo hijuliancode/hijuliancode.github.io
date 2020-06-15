@@ -287,6 +287,23 @@ a:hover { text-decoration: underline; }
 /**
   * Skills
 */
+.Skills {
+  display: flex;
+  list-style-type: none;
+}
+.Skills li {
+  background-color: var(--color-brand-01);
+  border-radius: 0.4rem;
+  color: var(--color-light);
+  font-size: 1.4rem;
+  font-weight: var(--ff-primary-300);
+  min-width: 7.5rem;
+  padding: 0.2rem 0.8rem;
+  text-align: center;
+}
+.Skills li:not(:first-child) {
+  margin-left: 2.4rem;
+}
 
 /**
   * Contact
