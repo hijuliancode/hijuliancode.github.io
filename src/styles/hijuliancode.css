@@ -22,7 +22,7 @@
   --ff-primary-700: 700;
 
   /* Root Styles */
-  color: var(--color-black);
+  color: var(--color-brand-01);
 }
 
 html, body {
@@ -38,3 +38,39 @@ body {
 
 a { text-decoration: none; }
 a:hover { text-decoration: underline; }
+
+/**
+  * * Alerts
+*/
+
+/**
+  * * Icons
+*/
+
+/**
+  * * Header
+*/
+
+/**
+  * * Sections
+*/
+
+/**
+  * * Hero
+*/
+
+/**
+  * * Projects
+*/
+
+/**
+  * * Skills
+*/
+
+/**
+  * * Contact
+*/
+
+/**
+  * * Footer
+*/
