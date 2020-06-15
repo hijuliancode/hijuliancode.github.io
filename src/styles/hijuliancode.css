@@ -291,6 +291,24 @@ a:hover { text-decoration: underline; }
 /**
   * Contact
 */
+.section-Contact {
+  padding-bottom: 2.4rem;
+}
+.section-Contact p {
+  font-size: 1.6rem;
+}
+.section-Contact p a {
+  color: var(--color-brand-00);
+  text-decoration: underline;
+}
+@media (min-width: 550px) {
+  .section-Contact {
+    padding-bottom: 6.2em;
+  }
+  .section-Contact p {
+    font-size: 2.4rem;
+  }
+}
 
 /**
   * Footer
