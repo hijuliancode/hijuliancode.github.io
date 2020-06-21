@@ -5,7 +5,7 @@
   --color-brand-02: #1967D2;
   --color-brand-03: #40C4FF;
 
-  --color-gighlight: #00FF0C;
+  --color-highlight: #00FF0C;
   --color-light: #F0EDED;
 
   --color-white: #F5F5F5;
@@ -42,6 +42,17 @@ body {
 
 a { text-decoration: none; }
 a:hover { text-decoration: underline; }
+
+/**
+  Helpers
+*/
+body .mt-3 {
+  margin-top: calc(var(--base-size) *  3);
+}
+body .text-highlight {
+  color: var(--color-highlight);
+  font-size: 2.8rem;
+}
 
 /**
   * Shared Styles
