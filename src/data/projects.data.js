@@ -1,4 +1,4 @@
-{
+export const projects = {
   "projects": [
     {
       "id": 0,
@@ -6,11 +6,11 @@
       "project_name_desc": "",
       "project_description": "I have experience working with Control Version Software how GIT, on Github you can find my projects, repositories of contribution and study.",
       "project_image_url": "github.png",
-      "project_link_url": "https://github.com/AlejandroJSR7/",
+      "project_link_url": "https://github.com/hijuliancode/",
       "project_developed_on_team": true,
       "project_tags": [],
       "team_name": "Github",
-      "team_link_url": "https://github.com/AlejandroJSR7"
+      "team_link_url": "https://github.com/hijuliancode"
     },
     {
       "id": 2,

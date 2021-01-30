@@ -347,6 +347,7 @@ button.active {
 */
 .Skills {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
 }
 .Skills li {
@@ -359,8 +360,8 @@ button.active {
   padding: 0.2rem 0.8rem;
   text-align: center;
 }
-.Skills li:not(:first-child) {
-  margin-left: 2.4rem;
+.Skills li:not(:last-child) {
+  margin-right: 2.4rem;
 }
 
 /**

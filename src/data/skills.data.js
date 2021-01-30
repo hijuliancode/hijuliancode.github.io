@@ -1,4 +1,4 @@
-{
+export const skills = {
   "skills": [
     "Javascript", 
     "Html",
