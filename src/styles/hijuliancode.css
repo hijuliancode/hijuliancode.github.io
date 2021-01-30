@@ -82,6 +82,7 @@ body .text-center {
   justify-content: center;
   padding: 0.7rem 1rem;
 }
+.Alert a { color: var(--color-brand-03); }
 .Alert span {
   display: none;
 }
@@ -132,7 +133,7 @@ button.active {
 }
 .Header a { color: var(--color-light); }
 .Header__brand strong {
-  font-weight: var(--ff-primary-400);
+  font-weight: var(--ff-primary-300);
 }
 .Header__brand figure {
   margin: 0;
@@ -245,6 +246,9 @@ button.active {
   .Hero h2 {
     font-size: 5.2rem;
   }
+}
+.Hero h3 {
+  font-size: 2.8rem;
 }
 .Hero__footer {
   border-top: 1px solid var(--color-white);
